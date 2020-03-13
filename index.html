@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Low Signal Amplifier Project </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Low Signal Amplifier Design<br>	
+									</strong> by Bryan Parada <br> SID:861027456 : Bpara001@ucr.edu</a>
+									<ul class="icons">
+										<form action= "https://github.com/UCREE175/LowSignalAmp">
+											<button style="font-size:14px">Project Code  <i class="fa fa-github" style="font-size: 24px;"></i></button>
+										</form>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>EE 175 Senior Design<br />
+											UCR</h1>
+											<p>My Journey of understanding the process of developing a Project.</p>
+										</header>
+										<p>The Low Noise Preamplifier is used to produce an amplified version of a weak signal gathered from a detector. 
+											In our case the detector is a hall sensor input.
+											The purpose of this device is to mount it on top of an Unmanned Aerial Vehicle (UAV).
+											<br><br>
+											I used Bluetooth and RFCOMM communication do send ASCII bits of data ,4 at a time. Converted them and displayed them as mV on the application.As well as making the application handle multiple threads.
+
+											<br><br>
+											This will show only my input in the group project. Everything here is what I personally did in the project.	
+										</p>
+									
+					
+									</div>
+									<span class="bbox">
+										<img src="images/block.png" alt="" />
+									</span>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Features</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="icon solid fa-home"></span>
+											<div class="content">
+												<h3>Overview 1</h3>
+												<p>Low Noise Amplifier is both Portable and Low Cost. <br>(Cost is roughly =$200USD)</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon fa-address-book"></span>
+											<div class="content">
+												<h3>Overview 2</h3>
+												<p>Application has a container for automatically connecting amplifier to familiar phone devices</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-envelope"></span>
+											<div class="content">
+												<h3>Overview 3</h3>
+												<p>Follows RFCOM Communication Protocols and Transfers data to the Application. Also Creates Multiple Threads to maintain the application and raspberry pi working properly.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-signal"></span>
+											<div class="content">
+												<h3>Overview 4</h3>
+												<p>Detailed error messages and asks for permission if device does not have bluetooth activated.</p>
+											</div>
+										</article>
+
+										
+
+
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Major Journal Entries</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a  class="image"><img src="images/General_Schem.png"  /></a>
+											<h3>General Design Completed</h3>
+											<p>I broke up our team to research the different parts our design was going to have. Asked my team for their input,to make any changes to the block diagram design I designed.</p>
+											<ul class="actions">
+												<li><a href="Journal1.html" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a class="image"><img src="images/bread.png" alt="" /></a>
+											<h3>Parts List Completed</h3>
+											<p>This was the parts list I wrote down in a word document and sent to my team to make sure it seemed good. At this point I had already researched a couple of components and bought the pieces to test out my amplifier design. </p>
+											<ul class="actions">
+												<li><a href="Journal2.html" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a class="image2"><img src="images/app_basic.png" alt="" /></a>
+											<h3>App Development Started</h3>
+											<p>I began creating the application from scratch. I was unfamiliar with android studio and java. I decided to use Roman's resources and began designing the application's main features. </p>
+											<ul class="actions">
+												<li><a href="Journal3.html" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a class="image"><img src="images/Test1.png" alt="" /></a>
+											<h3>Amplifier Testing</h3>
+											<p>For our design, we tried incorporating a jfet resistor due to the low noise and limited bandwidth. But we faced many issues with getting the desired voltage gain with this design. The gain was always lower than we would like it to be. </p>
+											<ul class="actions">
+												<li><a href="Journal4.html" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a class="image2"><img src="images/app_final.png" alt="" /></a>
+											<h3>Bluetooth Feature Finished</h3>
+											<p>Includes my actual pushes to Github and how many lines of code I inputted throughout the projects timeline.One of the hardest struggles from this project was getting the bluetooth to be active on the application. Ended up making use of four threads of the pi and phone to keep a stable communication between both devices.</p>
+											<ul class="actions">
+												<li><a href="Journal5.html" class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a  class="image"><img src="images/pi.JPG" alt="" /></a>
+											<h3>Raspberry PI Communication Completed With APP</h3>
+											<p>I mainly helped in handling the specific names required to obtain the right data from the app. I also did the pairing and requesting and receiving UUID from devices to avoid settings pairing from phone. Which allows pairing directly from app.</p>
+											<ul class="actions">
+												<li><a href="Journal6.html" class="button">More</a></li>
+											</ul>
+										</article>
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Main Page</a></li>
+										
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Main Features</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<h2>Phone Application</h2>
+											<p>To reduce cost and weight, all data is transfered to phone via Bluetooth Communication.</p>
+										</article>
+										<article>
+											<h2> Low Noise/Cost</h2>
+											<p>Low Signal Amplifier we designed is roughly $200USD compared to the bulky $500-$3000USD models.</p>
+										</article>
+										<article>
+											<h2> Portability</h2>
+											<p>Since the amplifier contains a raspberry pi and application. It does not need a display, making the actual amplifier smaller.</p>
+										</article>
+									</div>
+									
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Personal Details</h2>
+									</header>
+									<p>Bryan Jesse Parada <br>Computer Engineer </p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">bpara001@ucr.edu</a></li>
+
+										<li class="icon solid fa-home">Los Angeles Area<br />
+										</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p>Journal Of My Progress</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Journal Entry</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css"> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+                        
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Low Signal Amplifier Design<br>	
+									</strong> by Bryan Parada <br> SID:861027456 : Bpara001@ucr.edu</a>
+									<ul class="icons">
+										<form action= "https://github.com/UCREE175/LowSignalAmp">
+											<button style="font-size:14px">Project Code  <i class="fa fa-github" style="font-size: 24px;"></i></button>
+										</form>
+									</ul>
+									</ul>
+								</header>
+
+                            <!-- Content -->
+                            
+								<section>
+									<header class="main">
+                                        <h1>Journal 5: Bluetooth Finished</h1>
+                                        
+									</header>
+                                    <h2>Design</h2>
+                                    <hr class="major" >
+                                    <p>The images below show the different features I originally made a user input. I changed it to work in the background, and directly takes user to the low noise amplifier voltage reader screen.
+										Most of the work is in done in the background and multi threaded. I use the command "Voltage" to receive the voltage from the pi. If you desire a new input, you simply need to write a new name and pin layout from pi. The rest is handled by the listining portion of the app. Many difficulties were introduced since the phone we used is a samsung and android studio does not have any specifications for the phone. I created the hardware specifications for the phone and imported them to work on the touch phone we had.
+									Another issue that happened was I was programming for a phone with oreo API but our phone had a newer api which I had to code differently, since it had new restrictions and permissions needed to pass. Lastly input is sent in bits of 4 and I send a (!) key to tell the program we reached the end of the input. These inputs received from the pi are sent via ASCII characters which are later translated, once I obtain the last data bits. </p>
+                                    <hr class="major" >
+									<h2>Features</h2>
+									1.Easily add new inputs with a simple name command.
+									<br>
+									2.Automatically connect to familiar devices.
+									<br>
+									3.Bluetooth communication transfers 4 bits of data at a time to maintain connection.(Multiple Threads)
+									<br>
+									4.Detects if user forgot to turn on bluetooth, and ask to turn it on for them.(Permission)
+                                    <hr class="major" >
+
+                                    <h2>Images</h2>
+                                    <a  class="image2"><img src="images/app_final.png" alt="" /></a>
+									<a  class="image2"><img src="images/app_basic.png" alt="" /></a>
+									<a  class="image2"><img src="images/blue1.png" alt="" /></a>
+									<a  class="image2"><img src="images/blue2.png" alt="" /></a>
+									<a  class="image2"><img src="images/blue3.png" alt="" /></a>
+									<a class="image2"><img src="images/blue4.png" alt="" /></a>
+									<a  class="image2"><img src="images/gradle2.png" alt="" /></a>
+                                    <a  class="image2"><img src="images/gradle3.png" alt="" /></a>
+                                    <h3>Progress of Work on Github</h3>
+                                    <p>Amount of Code commited is included~ Shows Progress I did throughout the project</p>
+									<a class="image"><img src="images/proof1.png" alt="" /></span>
+                                    <a class="image"><img src="images/proof2.png" alt="" /></span>
+                                    <a class="image"><img src="images/proof3.png" alt="" /></span>
+                                    <a class="image"><img src="images/proof4.png" alt="" /></span>	
+                                    <a class="image"><img src="images/proof5.png" alt="" /></span>	
+
+									<p></p>
+
+									
+
+									
+
+								
+									
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Main Page</a></li>
+										
+										
+											
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Software</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<p>Bluetooth Server APP Enabled</p>
+									
+										</article>
+										<article>
+							
+											<p>Multiple Threads</p>										</article>
+										<article>
+											<p>Easily Add New Inputs to be Displayed</p>										</article>
+									</div>
+								
+								</section>
+
+							<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Personal Details</h2>
+								</header>
+								<p>Bryan Jesse Parada <br>Computer Engineer </p>
+								<ul class="contact">
+									<li class="icon solid fa-envelope"><a href="#">bpara001@ucr.edu</a></li>
+
+									<li class="icon solid fa-home">Los Angeles Area<br />
+									</li>
+								</ul>
+							</section>
+
+							<!-- Footer -->
+							<footer id="footer">
+								<p >Journal Of My Progress</p>
+							</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
